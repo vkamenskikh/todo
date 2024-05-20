@@ -1,0 +1,19 @@
+server:
+  port : 8080
+  error.include-message: always
+
+
+
+# Redis Config
+spring:
+  application.name: todo
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate.ddl-auto: create-drop
+    
+todo:
+  driverClassName: org.sqlite.JDBC
+  url: jdbc:sqlite:memory:myDb
+  username: sa 
+  password: sa
